@@ -1,0 +1,85 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<resources>
+    <declare-styleable name="verticalRecycler">
+        <attr name="itemTemplate" format="integer" />
+        <attr name="listDivider" format="integer" />
+    </declare-styleable>
+     <declare-styleable name="CircleImageView">
+        <attr name="border" format="boolean">
+        </attr>
+        <attr name="border_width" format="dimension">
+        </attr>
+        <attr name="border_color" format="color">
+        </attr>
+        <attr name="shadow" format="boolean">
+        </attr>
+    </declare-styleable>
+    <item type="id" name="MvxBindingTagUnique" />
+    <declare-styleable name="ViewPagerIndicator">
+        <!-- Style of the circle indicator. -->
+        <attr name="vpiCirclePageIndicatorStyle" format="reference" />
+    </declare-styleable>
+    <attr name="centered" format="boolean" />
+    <attr name="selectedColor" format="color" />
+    <attr name="strokeWidth" format="dimension" />
+    <attr name="unselectedColor" format="color" />
+    <declare-styleable name="CirclePageIndicator">
+        <!-- Whether or not the indicators should be centered. -->
+        <attr name="centered" />
+        <!-- Color of the filled circle that represents the current page. -->
+        <attr name="fillColor" format="color" />
+        <!-- Color of the filled circles that represents pages. -->
+        <attr name="pageColor" format="color" />
+        <!-- Orientation of the indicator. -->
+        <attr name="android:orientation" />
+        <!-- Radius of the circles. This is also the spacing between circles. -->
+        <attr name="radius" format="dimension" />
+        <!-- Whether or not the selected indicator snaps to the circles. -->
+        <attr name="snap" format="boolean" />
+        <!-- Color of the open circles. -->
+        <attr name="strokeColor" format="color" />
+        <!-- Width of the stroke used to draw the circles. -->
+        <attr name="strokeWidth" />
+        <!-- View background -->
+        <attr name="android:background" />
+    </declare-styleable>
+
+    <declare-styleable name="progressView">
+        <attr name="progressValue" format="float" />
+        <attr name="progressColor" format="color" />
+        <attr name="progressTextColor" format="color" />
+        <attr name="progressBackground" format="color" />
+        <attr name="leftText" format="string" localization="suggested" />
+        <attr name="rightText" format="string" localization="suggested" />
+    </declare-styleable>
+
+     <declare-styleable name="toggleView">
+        <attr name="isChecked" format="boolean" />
+        <attr name="checkedDrawable" format="reference" />
+        <attr name="uncheckedDrawable" format="reference" />
+        <attr name="checkedBackgroundDrawable" format="reference" />
+        <attr name="uncheckedBackgroundDrawable" format="reference" />
+        <attr name="toggleTextViewVisibility" format="boolean" />
+        <attr name="imageColor" format="string" />
+    </declare-styleable>
+
+     <attr name="contestType" format="string" />
+
+    <declare-styleable name="closedContestSquareView">
+        <attr name="contestBackground" format="color" />
+        <attr name="titleText" format="string" />
+        <attr name="progressStatus" format="string" />
+    </declare-styleable>
+
+     <declare-styleable name="trackerContestTitleView">
+        <attr name="contestTitleText" format="string" localization="suggested" />
+        <attr name="contestTitleBackGroundColor" format="color" />
+    </declare-styleable>
+
+    <declare-styleable name="trackerContestProgressBoxView">
+        <attr name="contestBackground" format="color" />
+        <attr name="contestBoxTitleText" format="string" localization="suggested" />
+        <attr name="progressStatus" format="string" />
+        <attr name="stageType" format="string" />
+    </declare-styleable>
+</resources>

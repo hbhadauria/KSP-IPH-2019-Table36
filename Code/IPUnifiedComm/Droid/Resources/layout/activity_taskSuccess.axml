@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:local="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:background="@drawable/success">
+	<ImageView
+		android:layout_centerHorizontal="true"
+		android:id="@+id/imgArrow"
+		android:layout_width="47dp"
+		android:layout_height="47dp"
+		android:layout_above="@id/txtSubmitted"
+		android:src="@drawable/new_task_completion"/>
+	<TextView
+		android:layout_centerInParent="true"
+		android:id="@+id/txtSubmitted"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text="Task Submitted Successfully"
+		android:textSize="19sp"
+		android:textStyle="bold"
+		android:textColor="#12041f"/>
+	<TextView
+		android:textColor="#12041f"
+		android:layout_centerInParent="true"
+		android:id="@id/txtDescription"
+		android:layout_below="@id/txtSubmitted"
+		android:layout_width="200dp"
+		android:gravity="center"
+		android:layout_height="wrap_content"
+		android:text="You can track your tasks on the tasks page"
+		android:textSize="14sp"
+		android:minLines="2"/>
+
+	<Button
+		android:id="@+id/btnSubmit"
+		android:layout_width="match_parent"
+		android:layout_height="@dimen/dimen_46"
+		android:layout_marginTop="@dimen/dimen_32"
+		android:layout_marginLeft="@dimen/dimen_70"
+		android:layout_marginRight="@dimen/dimen_70"
+		android:layout_below="@id/txtDescription"
+		android:gravity="center"
+		android:layout_gravity="center"
+		android:textAllCaps="false"
+		android:background="@drawable/rounded_success_button_background"
+		android:text="Go back to my tasks"
+		android:textSize="15sp"
+		android:textStyle="bold"
+		android:textColor="@android:color/white"/>
+
+</RelativeLayout>

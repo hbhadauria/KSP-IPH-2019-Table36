@@ -1,0 +1,166 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:local="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:orientation="vertical"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent">
+	<include
+		layout="@layout/toolbar_backnavigation" />
+	<!--tool bar for only claims-->
+	<!--Header section-->
+	<ScrollView
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:background="@android:color/white"
+		local:MvxBind="BrandBackgroundColor 'White'">
+		<LinearLayout
+			android:orientation="vertical"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent">
+			<LinearLayout
+				local:MvxBind="BrandBackgroundColor 'Blue'"
+				android:background="#12041f"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:gravity="bottom"
+				android:orientation="vertical"
+				android:padding="@dimen/dimen_20">
+				<ImageView
+					android:layout_width="@dimen/dimen_60"
+					android:layout_height="@dimen/dimen_60"
+					android:layout_marginBottom="@dimen/dimen_12"
+					android:layout_gravity="center_horizontal"
+					android:src="@drawable/user_placeholder"/>
+				<!--Name Text section-->
+				<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:textSize="22sp"
+					android:fontFamily="sans-serif-light"
+					android:textStyle="normal"
+					android:textColor="#ffffff"
+					android:gravity="center_horizontal"
+					android:layout_gravity="center_horizontal"
+					android:text="Ravi D Channannavar"/>
+				<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:textSize="14sp"
+					android:fontFamily="sans-serif"
+					android:textStyle="bold"
+					android:textColor="#ffffff"
+					android:layout_gravity="center_horizontal"
+					android:gravity="center_horizontal"
+					android:text="SP, Bengaluru"/>
+			</LinearLayout>
+			<android.support.v7.widget.CardView
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				app:cardCornerRadius="@dimen/dimen_10"
+				app:cardElevation="@dimen/dimen_0"
+				android:layout_marginBottom="-10dp"
+				android:layout_marginTop="-10dp">
+				<LinearLayout
+					android:layout_width="match_parent"
+					android:layout_height="match_parent"
+					android:paddingBottom="10dp"
+					android:orientation="vertical">
+					<LinearLayout
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:orientation="vertical"
+						android:layout_marginLeft="@dimen/dimen_37"
+						android:layout_marginRight="@dimen/dimen_37"
+						android:layout_marginTop="@dimen/dimen_20">
+						<TextView
+							android:id="@+id/lblRole"
+							android:layout_width="@dimen/dimen_100"
+							android:layout_height="wrap_content"
+							android:textSize="14sp"
+							android:fontFamily="sans-serif"
+							android:textStyle="bold"
+							android:textColor="#3b3b3b"
+							android:letterSpacing="0.01"
+							android:lineSpacingExtra="2sp"
+							android:text="Designation" />
+						<TextView
+							android:id="@+id/lblRoleValue"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:textSize="14sp"
+							android:fontFamily="sans-serif"
+							android:textColor="#3b3b3b"
+							android:letterSpacing="0.01"
+							android:lineSpacingExtra="2sp"
+							android:text="Superintendent of Police, Bengaluru"
+							android:layout_toRightOf="@id/lblRole" />
+					</LinearLayout>
+                    <LinearLayout
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:orientation="vertical"
+						android:layout_marginLeft="@dimen/dimen_37"
+						android:layout_marginRight="@dimen/dimen_37"
+						android:layout_marginTop="@dimen/dimen_20">
+						<TextView
+							android:id="@+id/lblRole"
+							android:layout_width="@dimen/dimen_100"
+							android:layout_height="wrap_content"
+							android:textSize="14sp"
+							android:fontFamily="sans-serif"
+							android:textStyle="bold"
+							android:textColor="#3b3b3b"
+							android:letterSpacing="0.01"
+							android:lineSpacingExtra="2sp"
+							android:text="Tenure" />
+						<TextView
+							android:id="@+id/lblRoleValue"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:textSize="14sp"
+							android:fontFamily="sans-serif"
+							android:textColor="#3b3b3b"
+							android:letterSpacing="0.01"
+							android:lineSpacingExtra="2sp"
+							android:text="1 year, 1 Month "
+							android:layout_toRightOf="@id/lblRole" />
+					</LinearLayout>
+                    <LinearLayout
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:orientation="vertical"
+						android:layout_marginLeft="@dimen/dimen_37"
+						android:layout_marginRight="@dimen/dimen_37"
+						android:layout_marginTop="@dimen/dimen_20">
+						<TextView
+							android:id="@+id/lblRole"
+							android:layout_width="@dimen/dimen_100"
+							android:layout_height="wrap_content"
+							android:textSize="14sp"
+							android:fontFamily="sans-serif"
+							android:textStyle="bold"
+							android:textColor="#3b3b3b"
+							android:letterSpacing="0.01"
+							android:lineSpacingExtra="2sp"
+							android:text="Department" />
+						<TextView
+							android:id="@+id/lblRoleValue"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:textSize="14sp"
+							android:fontFamily="sans-serif"
+							android:textColor="#3b3b3b"
+							android:letterSpacing="0.01"
+							android:lineSpacingExtra="2sp"
+							android:text="LO"
+							android:layout_toRightOf="@id/lblRole" />
+					</LinearLayout>
+
+				</LinearLayout>
+			</android.support.v7.widget.CardView>
+		</LinearLayout>
+	</ScrollView>
+</LinearLayout>

@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+    <corners android:radius="25dp" /> <!-- increasing the value, increases the rounding. To make it like a capsule make the radius half of your button height -->
+    <solid android:color="#363636" /> <!-- the button color -->
+</shape>

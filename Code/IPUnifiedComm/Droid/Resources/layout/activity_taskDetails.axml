@@ -1,0 +1,124 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:local="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:orientation="vertical"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:background="#ffffff">
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:orientation="horizontal"
+		android:gravity="center_vertical"
+		android:paddingLeft="20dp">
+		<TextView
+			android:layout_width="0dp"
+			android:layout_weight="1"
+			android:layout_height="wrap_content"
+			android:textSize="16sp"
+			android:fontFamily="sans-serif"
+			android:textStyle="bold"
+			android:textColor="#12041f"
+			android:text="Task Details"/>
+		<ImageView
+			android:layout_width="?attr/actionBarSize"
+			android:layout_height="?attr/actionBarSize"
+			android:src="@drawable/close_black"
+			android:layout_alignParentLeft="true"
+			android:layout_centerVertical="true"
+			android:scaleType="fitCenter"
+			android:padding="@dimen/dimen_10"
+			android:clickable="true"
+            local:MvxBind="Click CloseCommand"/>
+	</LinearLayout>
+	<TextView
+		android:paddingLeft="20dp"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:textSize="16sp"
+		android:fontFamily="sans-serif"
+		android:textStyle="bold"
+		android:textColor="#676767"
+		android:text="URGENT"/>
+	<TextView
+		android:paddingLeft="20dp"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:textSize="27sp"
+		android:textStyle="bold"
+		android:fontFamily="sans-serif"
+		android:textColor="#363636"
+		android:text="RED Alert: Please make 
+sure the west is well 
+guarded."/>
+	<TextView
+		android:paddingLeft="20dp"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="20dp"
+		android:textSize="20sp"
+		android:fontFamily="sans-serif"
+		android:textColor="#363636"
+		android:text="
+Delegate to Mr. Sharma if needed.
+Message once completed. "/>
+	<View
+		android:layout_marginTop="20dp"
+		android:layout_width="match_parent"
+		android:layout_height="1dp"
+		android:background="#d8d8d8"/>
+
+	<TextView
+		android:layout_marginTop="12dp"
+		android:layout_marginLeft="20dp"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:textSize="16sp"
+		android:fontFamily="sans-serif"
+		android:textStyle="bold"
+		android:textColor="#12041f"
+		android:text="Recipients"/>
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:orientation="horizontal"
+		android:gravity="center_vertical">
+		<LinearLayout
+			android:layout_width="0dp"
+			android:layout_weight="1"
+			android:layout_height="wrap_content"
+			android:orientation="vertical"
+			android:gravity="center_vertical">
+			<TextView
+				android:layout_marginTop="12dp"
+				android:layout_marginLeft="20dp"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:textSize="14sp"
+				android:fontFamily="sans-serif"
+				android:textStyle="bold"
+				android:textColor="#363636"
+				android:text="Sri K. Ravishankar"/>
+
+			<TextView
+				android:layout_marginLeft="20dp"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:textSize="13sp"
+				android:fontFamily="sans-serif"
+				android:textStyle="normal"
+				android:textColor="#363636"
+				android:text="DSP, Bengaluru"/>
+		</LinearLayout>
+		<ImageView
+			android:layout_width="24dp"
+			android:layout_height="24dp"
+			android:layout_marginRight="20dp"
+			android:src="@drawable/green_tick"/>
+	</LinearLayout>
+
+</LinearLayout>

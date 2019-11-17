@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	android:id="@+id/activity_main"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent">
+	<FrameLayout
+		android:id="@+id/content_frame_task"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:layout_above="@+id/bottom_navigation"
+		android:visibility="gone"/>
+	<FrameLayout
+		android:id="@+id/content_frame_chat"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:layout_above="@+id/bottom_navigation"
+		android:visibility="gone" />
+	<FrameLayout
+		android:id="@+id/content_frame_menu"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:layout_above="@+id/bottom_navigation"
+		android:visibility="gone" />
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:orientation="vertical">
+	</LinearLayout>
+	<View
+		android:layout_width="match_parent"
+		android:layout_height="4dp"
+		android:layout_above="@id/bottom_navigation"
+		android:background="@drawable/bottomnavbarshadow"/>
+
+	<android.support.design.widget.BottomNavigationView
+        android:background="@android:color/white"
+		android:id="@+id/bottom_navigation"
+		android:layout_width="match_parent"
+		android:layout_height="@dimen/dimen_58"
+		android:layout_gravity="start"
+		android:layout_alignParentBottom="true"
+		app:itemHorizontalTranslationEnabled="false"
+		app:itemIconSize="40dp"
+        app:itemBackground="@android:color/white"
+        app:itemIconTint="@drawable/nav_item_colors"
+		app:menu="@menu/bottom_navigation_menu" />
+</RelativeLayout>

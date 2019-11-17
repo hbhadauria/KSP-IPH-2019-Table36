@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/tab_task"
+        android:enabled="true"
+        android:icon="@drawable/task_disabled"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/tab_chat"
+        android:enabled="true"
+        android:icon="@drawable/chat_disabled"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/tab_menu"
+        android:enabled="true"
+        android:icon="@drawable/menu_disabled"
+        app:showAsAction="always" />
+</menu>

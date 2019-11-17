@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.AppBarLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:local="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:id="@+id/appbar"
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content"
+	local:elevation="@dimen/dimen_0"
+	android:elevation="0dp"
+	android:background="#12041f">
+	<android.support.v7.widget.Toolbar
+		android:layout_width="match_parent"
+		android:layout_height="?attr/actionBarSize"
+		android:minHeight="?attr/actionBarSize"
+		local:layout_scrollFlags="scroll|enterAlways"
+		android:contentInsetLeft="@dimen/dimen_0"
+		android:contentInsetStart="@dimen/dimen_0"
+		android:contentInsetRight="@dimen/dimen_0"
+		android:contentInsetEnd="@dimen/dimen_0"
+		local:contentInsetLeft="@dimen/dimen_0"
+		local:contentInsetStart="@dimen/dimen_0"
+		local:contentInsetRight="@dimen/dimen_0"
+		local:contentInsetEnd="@dimen/dimen_0">
+		<RelativeLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content">
+			<ImageView
+				android:layout_width="?attr/actionBarSize"
+				android:layout_height="?attr/actionBarSize"
+				android:src="@drawable/whitebackarrow"
+				android:id="@+id/imgBackArrow"
+				android:layout_alignParentLeft="true"
+				android:layout_centerVertical="true"
+				android:visibility="visible"
+				android:scaleType="fitCenter"
+				android:padding="@dimen/dimen_15"
+				android:clickable="true"/>
+
+			<TextView
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/imgBackArrow"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:id="@+id/txtTitle"
+				tools:text="New Task"
+				android:textSize="16sp"
+				android:textAllCaps="false"
+				android:textStyle="bold"
+                android:textColor="#ffffff" />
+
+		</RelativeLayout>
+	</android.support.v7.widget.Toolbar>
+</android.support.design.widget.AppBarLayout>

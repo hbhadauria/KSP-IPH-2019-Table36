@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "387958189830",
+    "firebase_url": "https://ipunifiedcomm-hackathon.firebaseio.com",
+    "project_id": "ipunifiedcomm-hackathon",
+    "storage_bucket": "ipunifiedcomm-hackathon.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:387958189830:android:932a392663046178713887",
+        "android_client_info": {
+          "package_name": "com.deloitte.ipunifiedcomm"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "387958189830-5vq9qflgaqfqvfgm3soltc2voalihpjt.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.deloitte.ipunifiedcomm",
+            "certificate_hash": "4bd9810e18c36dd563c53e7c6df7975df8c1ef6a"
+          }
+        },
+        {
+          "client_id": "387958189830-o0nbv0mrep9gj10s2na4fikcv66qbd21.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyArLVS4U61eVaazNwbUdTypjIHrjOdk5K4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "387958189830-o0nbv0mrep9gj10s2na4fikcv66qbd21.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

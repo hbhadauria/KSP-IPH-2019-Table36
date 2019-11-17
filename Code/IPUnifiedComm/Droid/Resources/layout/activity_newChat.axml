@@ -1,0 +1,135 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:local="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:orientation="vertical"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:background="#12041f">
+	<android.support.design.widget.AppBarLayout
+		android:id="@+id/appbar"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		local:elevation="@dimen/dimen_0"
+		android:elevation="0dp"
+		android:background="#12041f">
+		<android.support.v7.widget.Toolbar
+			android:layout_width="match_parent"
+			android:layout_height="?attr/actionBarSize"
+			android:minHeight="?attr/actionBarSize"
+			local:layout_scrollFlags="scroll|enterAlways"
+			android:contentInsetLeft="@dimen/dimen_0"
+			android:contentInsetStart="@dimen/dimen_0"
+			android:contentInsetRight="@dimen/dimen_0"
+			android:contentInsetEnd="@dimen/dimen_0"
+			local:contentInsetLeft="@dimen/dimen_0"
+			local:contentInsetStart="@dimen/dimen_0"
+			local:contentInsetRight="@dimen/dimen_0"
+			local:contentInsetEnd="@dimen/dimen_0">
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:orientation="horizontal"
+				android:gravity="center_vertical">
+				<ImageView
+					android:layout_width="?attr/actionBarSize"
+					android:layout_height="?attr/actionBarSize"
+					android:src="@drawable/whitebackarrow"
+					android:id="@+id/imgBackArrow"
+					android:layout_alignParentLeft="true"
+					android:layout_centerVertical="true"
+					android:visibility="visible"
+					android:scaleType="fitCenter"
+					android:padding="@dimen/dimen_10"
+					android:clickable="true"/>
+
+				<ImageView
+					android:layout_width="30dp"
+					android:layout_height="30dp"
+					android:layout_marginRight="14dp"
+					android:background="@drawable/user_placeholder"/>
+				<LinearLayout
+					android:layout_width="0dp"
+					android:layout_height="wrap_content"
+					android:layout_weight="1"
+					android:orientation="vertical">
+					<TextView
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:textSize="14sp"
+						android:fontFamily="sans-serif"
+						android:textStyle="bold"
+						android:textColor="#ffffff"
+						tools:text="Aaditya Thakur"
+						local:MvxBind="Text Name;"/>
+					<TextView
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:textSize="11sp"
+						android:fontFamily="sans-serif"
+						android:textStyle="normal"
+						android:textColor="#ffffff"
+						tools:text="Sub-Inspector, Bengaluru"
+						local:MvxBind="Text Description;"/>
+				</LinearLayout>
+            </LinearLayout>
+		</android.support.v7.widget.Toolbar>
+	</android.support.design.widget.AppBarLayout>
+	<android.support.v7.widget.CardView
+		xmlns:card_view="http://schemas.android.com/apk/res-auto"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:background="@android:color/white"
+		android:layout_marginBottom="-10dp"
+		local:cardCornerRadius="@dimen/dimen_10">
+		<RelativeLayout
+			android:layout_width="match_parent"
+			android:layout_height="match_parent">
+			<IPUnifiedComm.Droid.Views.Controls.VerticalRecyclerView
+				android:id="@+id/messageRecyclerView"
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+                android:background="#f1f1f1"
+				android:layout_above="@+id/linearLayout"
+                local:MvxBind="ItemsSource Messages;"/>
+
+			<LinearLayout
+				android:id="@+id/linearLayout"
+				android:layout_width="match_parent"
+				android:layout_height="52dp"
+				android:layout_alignParentBottom="true"
+				android:layout_alignParentLeft="true"
+				android:layout_alignParentStart="true"
+				android:orientation="horizontal"
+                android:gravity="center_vertical"
+				android:layout_marginBottom="10dp">
+
+				<ImageView
+					android:id="@+id/addMessageImageView"
+					android:layout_width="40dp"
+                    android:layout_marginLeft="@dimen/dimen_5"
+					android:layout_height="40dp"
+                    android:padding="@dimen/dimen_5"
+					android:src="@drawable/chat_add_attachment"/>
+
+				<EditText
+					android:id="@+id/messageEditText"
+					android:layout_width="0dp"
+					android:layout_height="wrap_content"
+					android:layout_gravity="center_vertical"
+					android:layout_weight="1"
+					android:background="@null"/>
+
+				<ImageView
+                    android:padding="@dimen/dimen_5"
+					android:id="@+id/sendButton"
+					android:layout_width="40dp"
+					android:layout_height="40dp"
+                    android:layout_marginRight="@dimen/dimen_10"
+                    android:src="@drawable/chat_send"/>
+
+			</LinearLayout>
+		</RelativeLayout>
+	</android.support.v7.widget.CardView>
+</LinearLayout>

@@ -1,0 +1,100 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:local="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="130dp">
+	<android.support.v7.widget.CardView
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		app:cardCornerRadius="10dp"
+        android:layout_marginTop="10dp"
+		android:layout_marginLeft="10dp"
+		android:layout_marginRight="10dp"
+		android:layout_marginBottom="10dp"
+		app:cardElevation="0dp">
+
+		<RelativeLayout
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:paddingLeft="10dp"
+			android:paddingRight="10dp">
+			<TextView
+				android:layout_marginTop="13dp"
+				android:id="@+id/typeTxt"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				tools:text="CAUTIONARY"
+				android:textSize="11sp"
+				android:textStyle="bold"
+				android:layout_alignParentLeft="true"
+				android:textColor="#000000"
+                local:MvxBind="Text Type;"/>
+
+			<TextView
+				android:layout_below="@id/typeTxt"
+				android:layout_marginTop="7dp"
+				android:id="@+id/fromTxt"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="From:"
+				android:textSize="11sp"
+				android:layout_alignParentLeft="true"
+				android:textColor="#000000"/>
+
+			<TextView
+				android:layout_below="@id/fromTxt"
+				android:layout_marginTop="5dp"
+				android:id="@+id/nameTxt"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				tools:text="Ravneesh Kumar"
+				android:textSize="13sp"
+				android:textStyle="bold"
+				android:layout_alignParentLeft="true"
+				android:textColor="#000000"
+                local:MvxBind="Text FromName;"/>
+
+			<TextView
+				android:layout_below="@id/nameTxt"
+				android:layout_marginTop="5dp"
+				android:id="@+id/detailTxt"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				tools:text="DSP, Bengaluru"
+				android:textSize="13sp"
+				android:layout_alignParentLeft="true"
+				android:textColor="#000000"
+                local:MvxBind="Text FromName;"/>
+
+			<TextView
+				android:layout_below="@id/fromTxt"
+				android:layout_marginTop="5dp"
+				android:id="@+id/dateTxt"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				tools:text="15 Nov"
+				android:textSize="10sp"
+				android:layout_alignParentRight="true"
+				android:textColor="#d0d0d0"
+                local:MvxBind="Text FromDate;"/>
+
+
+			<TextView
+				android:layout_below="@id/dateTxt"
+				android:layout_marginTop="7dp"
+				android:id="@+id/statusTxt"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				tools:text="Pending"
+				android:textSize="12sp"
+				android:textStyle="bold"
+				android:layout_alignParentRight="true"
+				tools:textColor="#e46c6c"
+                local:MvxBind="Text Status;"/>
+
+		</RelativeLayout>
+	</android.support.v7.widget.CardView>
+</RelativeLayout>
